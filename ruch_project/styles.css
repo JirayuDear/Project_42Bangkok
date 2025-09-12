@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Thai:wght@100..900&display=swap');
+
 :root {
   --bg:#f4f6fb;
   --card:#ffffff;
@@ -24,6 +26,24 @@ body {
   line-height:1.6;
 }
 
+.welcome{
+  font-family: "Kanit", sans-serif;
+  font-size: 50px; 
+  font-weight: 700; 
+  line-height: 1.8; 
+  color: #333; 
+}
+
+p {
+  font-family: "Kanit", sans-serif;
+
+  font-size: 18px; 
+  font-weight: 400; 
+  line-height: 1.8; 
+  color: #333; 
+}
+
+
 .container {
   width:90%;
   max-width:1100px;
@@ -42,7 +62,7 @@ body {
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:1rem 0;
+  /* padding:1rem 0; */
 }
 
 .brand {
@@ -75,6 +95,7 @@ body {
   cursor:pointer;
   transition:background 0.3s;
   margin-left:1rem;
+  font-weight: bold;
 }
 
 .btn:hover {
@@ -108,7 +129,7 @@ html {
 }
 .card {
   background:var(--card);
-  padding:1rem;
+  padding:2rem;
   border-radius:var(--radius);
   box-shadow:var(--shadow);
   text-decoration:none;
@@ -132,6 +153,9 @@ section {
 
 .site-footer {
   background:var(--card);
+  bottom: 0;
+  left: 0;
+  width: 100%;
   text-align:center;
   padding:1rem 0;
   margin-top:2rem;
