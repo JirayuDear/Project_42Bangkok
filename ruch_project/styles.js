@@ -1,18 +1,13 @@
-(function(){
-function setupToggle(toggleId){
-const btn=document.getElementById(toggleId);
-const nav=btn?.parentElement.querySelector('.nav');
-if(!btn||!nav) return;
-btn.addEventListener('click',()=>{
-nav.style.display = nav.style.display==='flex' ? 'none' : 'flex';
+document.getElementById("menu-toggle")?.addEventListener("click", () => {
+  document.getElementById("main-nav").classList.toggle("open");
 });
-}
-setupToggle('menu-toggle');
-setupToggle('menu-toggle-1');
-setupToggle('menu-toggle-2');
 
+// ปุ่มสุ่มสี
+document.getElementById("random-color-btn")?.addEventListener("click", () => {
+  const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+  document.documentElement.style.setProperty("--accent", randomColor);
 
-// highlight current link
-const links=document.querySelectorAll('.nav-link');
-links.forEach(l=>{if(l.href===location.href)l.classList.add('active')});
-})();
+  // เพิ่ม alpha สำหรับสีเข้ม
+  let darkColor = randomColor + "cc";
+  document.documentElement.style.setProperty("--accent-dark", darkColor);
+});
