@@ -1,54 +1,49 @@
+<!doctype html>
 <html lang="th">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Portfolio — Home</title>
-<link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfolio — Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="site-header">
-<div class="container header-flex">
-<h1 class="brand">My Portfolio</h1>
-<nav class="nav" id="main-nav">
-<a href="index.html" class="nav-link">Home</a>
-<a href="person1.html" class="nav-link">Person 1</a>
-<a href="person2.html" class="nav-link">Person 2</a>
-</nav>
-<button id="menu-toggle" class="menu-toggle">☰</button>
-</div>
-</header>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Portfolio</h1>
+      <nav class="nav" id="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="person1.html" class="nav-link">Person 1</a>
+        <a href="person2.html" class="nav-link">Person 2</a>
+      </nav>
+      <button id="random-color-btn" class="btn">🎨 สุ่มสี</button>
+      <button id="menu-toggle" class="menu-toggle">☰</button>
+    </div>
+  </header>
 
+  <main class="container main-content">
+    <section class="home-hero">
+      <h2>✨ ยินดีต้อนรับสู่ Portfolio ของเรา ✨</h2>
+      <p class="subtitle">พบกับข้อมูล โปรเจกต์ และผลงานของทั้งสองคนได้ที่นี่</p>
+      <div class="cards">
+        <a class="card" href="person1.html">
+          <img src="https://via.placeholder.com/400x220?text=Person+1" alt="Person 1">
+          <h3>Person 1</h3>
+          <p>ผู้เชี่ยวชาญด้านเว็บและการเขียนโปรแกรม</p>
+        </a>
+        <a class="card" href="person2.html">
+          <img src="https://via.placeholder.com/400x220?text=Person+2" alt="Person 2">
+          <h3>Person 2</h3>
+          <p>นักออกแบบและนักพัฒนาแอปพลิเคชันมือถือ</p>
+        </a>
+      </div>
+    </section>
+  </main>
 
-<main class="container main-content">
-<section class="home-hero">
-<h2>✨ Welcome ✨</h2>
-<p class="subtitle">Explore the portfolios of two creative minds</p>
-<div class="cards">
-<a class="card" href="person1.html">
-<img src="https://via.placeholder.com/400x240?text=Person+1" alt="Person 1">
-<div class="card-body">
-<h3>Person 1</h3>
-<p>Web Developer & Programmer</p>
-</div>
-</a>
-<a class="card" href="person2.html">
-<img src="https://via.placeholder.com/400x240?text=Person+2" alt="Person 2">
-<div class="card-body">
-<h3>Person 2</h3>
-<p>Designer & Mobile App Developer</p>
-</div>
-</a>
-</div>
-</section>
-</main>
+  <footer class="site-footer">
+    <div class="container">© 2025 Portfolio</div>
+  </footer>
 
-
-<footer class="site-footer">
-<div class="container">© 2025 Portfolio</div>
-</footer>
-
-
-<script src="script.js"></script>
+  <script src="styles.js"></script>
 </body>
 </html>
