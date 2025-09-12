@@ -3,53 +3,89 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Portfolio — Person 1</title>
+  <title>Portfolio — Jirapol</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navbar -->
   <header class="site-header">
     <div class="container">
       <h1 class="brand">Jirapol</h1>
       <nav class="nav" id="main-nav">
         <a href="index.html" class="nav-link">Home</a>
         <a href="#about" class="nav-link">About Me</a>
-        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#showcase" class="nav-link">Showcase</a>
         <a href="#contact" class="nav-link">Contact</a>
+        <a href="#Experience" class="nav-link">Experience</a>
       </nav>
       <button id="random-color-btn" class="btn">🎨 Random Color</button>
       <button id="menu-toggle" class="menu-toggle">☰</button>
     </div>
   </header>
 
-  <!-- Content -->
-  <main class="container main-content">
-    <div><img src="tar.jpg" alt="tar" style="border-radius: 100%; width: 500px; margin-left: 300px;"></div>
-    <section id="about">
+  <main class="container person-page">
+    <section class="about card" id="about">
       <h2>About Me</h2>
-      <p>ผมชื่อจิรพล พงษ์ทอง อายุ 20 ปี กำลังศึกษาอยู่ที่สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง 
-         คณะวิศวกรรมศาสตร์ สาขาวิศวกรรมคอมพิวเตอร์งานอดิเรกคือการเขียนโค้ดและอ่านหนังสือ</p>
+      <div class="about-grid">
+        <div class="avatar-wrapper" tabindex="0">
+          <img src="tar.jpg" alt="Jirapol">
+        </div>
+        <div>
+          <h3>Jirapol Pongthong</h3>
+          <p><strong>Age:</strong> 20</p>
+          <p><strong>University:</strong> King Mongkut's Institute of Technology Ladkrabang</p>
+          <p><strong>Major:</strong> Computer Engineering</p>
+          <p><strong>Hobbies:</strong> Coding, Reading Books</p>
+        </div>
+      </div>
     </section>
 
-    <section id="skills">
-      <h2>ความสามารถ</h2>
+    <section class="showcase card" id="showcase">
+      <h2>Showcase</h2>
       <ul>
-        <li>พัฒนาเว็บไซต์ (HTML, CSS, JavaScript)</li>
-        <li>Python Programming</li>
-        <li>ทำโปรเจกต์ IoT และ Data Science</li>
+        <li><strong>Project</strong> — ทำโปรเจคเเข่งขันในการเเข่งขัน Rubber Authority of Thailand </li>
+        <li><strong>Skills</strong> — Web Development (HTML, CSS, JS), Python, Data Science, C ,C++</li>
+        <li><strong>Experience</strong> — Participated in International Science Competitions call(WICE)</li>
       </ul>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: person1@email.com</p>
-    </section>
+    <section class="contact card" id="contact" style="padding:20px; border-radius:12px;">
+        <h2>Contact</h2>
+        <div style="display:flex; align-items:center; gap: 8px ;margin-bottom:10px; ">
+          <img src="github.png" alt="GitHub" style="width:30px; height:30px; margin: 0 0;">
+          <p style="margin:0; font-weight:bold;">GitHub : </p>
+          <a href="https://github.com/Jirapol-Pongthong" style="color: black; ">Jirapol-Pongthong</a>
+        </div>
+        <div style="display:flex; align-items:center; gap: 8px ;margin-bottom:10px; ">
+          <img src="gmail.png" alt="GitHub" style="width:30px; height:30px; margin: 0 0;">
+          <p style="margin:0; font-weight:bold;">Gmail : </p>
+          <p>jirapol.phongtong@gmial.com</p>
+        </div>
+
+      </section>
+
+      <section class="Experience card" id="Experience" style="padding:20px; border-radius:12px; text-align:center;">
+        <h2>Experience (Tutor)</h2>
+        <div style="display:flex; justify-content:center; align-items:center; gap: 8px; margin-bottom:20px;">
+          <img src="IG.png" alt="Instagram" style="width:30px; height:30px;">
+          <p style="margin:0; font-weight:bold;">IG :</p>
+          <a href="https://www.instagram.com/tuktuk.tutor" style="color: black;">tuktuk.tutor</a>
+        </div>
+
+
+        <div style="margin-top:20px;">
+          <iframe width="560" height="315" src="//www.youtube.com/embed/sqN6Pri7_G0?si=kIWAqHwBDlhS9oo5"
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container">© 2025 Person 1</div>
+    <div class="container">© 2025 Jirapol Pongthong</div>
   </footer>
 
   <script src="styles.js"></script>
