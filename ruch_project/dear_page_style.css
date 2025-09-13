@@ -20,8 +20,7 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  font-family: "Poppins", sans-serif;
+  min-height: 100;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
