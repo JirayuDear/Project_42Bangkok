@@ -162,11 +162,6 @@ section {
   box-shadow:var(--shadow);
 }
 
-html {
-  scroll-behavior:smooth;
-}
-
-
 .about-grid {
   display: flex;
   gap: 1.25rem;
@@ -187,7 +182,6 @@ html {
   outline: none;
 }
 
-
 .avatar:hover,
 .avatar:focus {
   transform: translateY(-10px) scale(1.05);
@@ -201,7 +195,7 @@ html {
     text-align: center;
   }
 
-  .avatar {
+  .avatar-wrapper {
     width: 140px;
     height: 140px;
     margin-bottom: 0.75rem;
@@ -219,13 +213,11 @@ html {
   cursor: pointer;
 }
 
-
 .avatar-wrapper:hover,
 .avatar-wrapper:focus-within {
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0 20px 40px rgba(0,0,0,0.18);
 }
-
 
 .avatar-wrapper img {
   width: 100%;
